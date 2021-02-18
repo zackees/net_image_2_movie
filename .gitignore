@@ -3,6 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Out directory
+out/
+data/
+*.png
+*.mp4
+
+
 # C extensions
 *.so
 
