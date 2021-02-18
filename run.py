@@ -33,14 +33,8 @@ def main():
 		sample_seconds = int(input('Sample every X seconds: '))
 
 	while True:
-		#cmd = make_fetch_cmd(url)
-		#print(f'Executing "{cmd}"')
-		#os.system(cmd)
-
 		data = requests.get(url).content
-		print(f'Data was {len(data)} bytes')
 		file_name = datetime.now().strftime("image%m-%d-%Y_%H_%M_%S.png")
-		print(f'Filename: {file_name}')
 		file_path = f'data/{file_name}'
 		with open(file_path, 'wb') as fd:
 			print(f'Writing to {file_path}')
