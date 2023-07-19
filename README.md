@@ -10,7 +10,7 @@ make_movie.py: Stitches those png files together into a movie.
   * Movie will be produced under `out/out.mp4`
 
 # JPG Example:
-  * `python3 fetch_png.py --url http://www.ercot.com/content/cdr/main/currentDayForecastSystemLoad.j --sample 10`
+  * `python3 fetch_png.py --url http://www.ercot.com/content/cdr/main/currentDayForecastSystemLoad.jpg --sample 10`
   * `python3 make_movie.py`
   * Movie will be produced under `out/out.mp4`
   * 
