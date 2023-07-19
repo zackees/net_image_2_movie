@@ -17,7 +17,7 @@ except:
 
 def make_fetch_cmd(url: str) -> str:
 	date_suffix = datetime.now().strftime("%m-%d-%Y_%H:%M:%S")
-	return f'curl -X GET {url} --output ./data/{date_suffix}.jpg'
+	return f'curl -X GET {url} --output ./data/{date_suffix}.png'
 
 
 def main():
@@ -34,7 +34,7 @@ def main():
 
 	while True:
 		data = requests.get(url).content
-		file_name = datetime.now().strftime("image%m-%d-%Y_%H_%M_%S.jpg")
+		file_name = datetime.now().strftime("image%m-%d-%Y_%H_%M_%S.png")
 		file_path = f'data/{file_name}'
 		with open(file_path, 'wb') as fd:
 			print(f'Writing to {file_path}')
